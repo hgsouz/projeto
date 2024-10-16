@@ -80,14 +80,19 @@ body * {
 
   position: absolute;
   top: 50%;
+  left: 0;
   z-index: 1;
   transform: translateY(-50%);
 
-  animation: slide-back 0.4s;
+  animation: slide-back 0.2s;
 }
 
 .light #switch button {
-  animation: slide 0.4s forwards;
+  animation: slide 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
